@@ -8,7 +8,7 @@ import Leaves from "./components/Leaves";
 import Profile from "./components/Profile";
 import Feedback from "./components/Feedback";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://pulsehr-backend-sa06.onrender.com/api";
 
 // Icons as SVG components
 const DashboardIcon = () => (
@@ -130,7 +130,7 @@ const sidebarLabels = {
 };
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem("token"));
+  const [token, setToken] = useState(localStorage.getItem("token") || null);
   const [user, setUser] = useState(null);
   const [activeTab, setActiveTab] = useState("dashboard");
   const [sidebarExpanded, setSidebarExpanded] = useState(false);

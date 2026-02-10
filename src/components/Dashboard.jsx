@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://pulsehr-backend-sa06.onrender.com/api";
 
 // Icons
 const FormIcon = () => (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useToast } from "./Toast";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://pulsehr-backend-sa06.onrender.com/api";
 
 function Leaves({ token, user, isAdmin }) {
   const [leaves, setLeaves] = useState([]);
