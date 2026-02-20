@@ -91,7 +91,7 @@ function Auth({ onLogin }) {
       <div className="auth-container">
         <div className="auth-card">
           <div className="auth-header">
-            <h1>PulseHR</h1>
+            <h1>PulseHR: Employee Managment System</h1>
             <p>Streamline your workforce management</p>
           </div>
 

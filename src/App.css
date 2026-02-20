@@ -1,7 +1,7 @@
 :root {
-  --primary: #22c55e;
-  --primary-light: #dcfce7;
-  --primary-dark: #16a34a;
+  --primary: #522b5b;
+  --primary-light: #dfb6b2;
+  --primary-dark: #854f6c;
   --dark: #1e293b;
   --text: #374151;
   --text-light: #6b7280;
@@ -9,7 +9,7 @@
   --border: #e5e7eb;
   --light: #f9fafb;
   --white: #ffffff;
-  --success: #22c55e;
+  --success: #522b5b;
   --warning: #f59e0b;
   --danger: #ef4444;
   --info: #3b82f6;
@@ -711,7 +711,7 @@ tbody tr:last-child td {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.2s;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2 ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -720,7 +720,7 @@ tbody tr:last-child td {
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 }
 
 .btn:active {
@@ -736,12 +736,12 @@ tbody tr:last-child td {
   color: var(--white);
   font-weight: 600;
   letter-spacing: 0.3px;
-  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+  box-shadow: 0 4px 15px rgba(82, 43, 91, 0.3);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, #168d3a 100%);
-  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+  background: var(--primary-dark);
+  box-shadow: 0 8px 25px rgba(82, 43, 91, 0.35);
   transform: translateY(-2px);
 }
 
@@ -1331,7 +1331,13 @@ textarea::placeholder {
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
+    width: 220px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.expanded {
+    transform: translateX(0);
   }
 
   .main-content {
