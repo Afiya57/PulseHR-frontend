@@ -106,7 +106,7 @@ function Feedback({ token, isAdmin }) {
         <h2>{isAdmin ? "All Feedback" : "My Feedback"}</h2>
         {!isAdmin && (
           <button className="btn btn-primary" onClick={openModal}>
-            + Submit Feedback
+            + Add Feedback
           </button>
         )}
       </div>
@@ -192,7 +192,7 @@ function Feedback({ token, isAdmin }) {
         <div className="modal">
           <div className="modal-content">
             <div className="modal-header">
-              <h2>Submit Feedback</h2>
+              <h2>Add Feedback</h2>
               <span className="close" onClick={() => setShowModal(false)}>
                 &times;
               </span>
